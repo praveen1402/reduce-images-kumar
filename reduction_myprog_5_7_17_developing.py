@@ -50,8 +50,8 @@ for j in range(4,len(list)):#len(list)):#File number in the folder
              BP = f['Background_Period'][(...)]#Background Period
              BNO = f['bunches'][(i)]#Bunch Number
              TOF5 = sum_0-TOF[5000:8000]
-             if BNO%BP!=0:# definetion for background: If BNO%BP==0, then it is background
-#             if np.max(TOF5[1127:1190])>=10:
+#            if BNO%BP!=0:# definetion for background: If BNO%BP==0, then it is background
+             if np.max(TOF5[1127:1190])>=10:
                  k +=1
                  Signal += Img
              else:
